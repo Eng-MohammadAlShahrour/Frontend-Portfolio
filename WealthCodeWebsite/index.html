@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta
+      name="keywords"
+      content="Wealthcode,Investments,AI investment,Algorithm trading,Forex bot,Trading bot,Commodities trading"
+    />
+    <link rel="icon" href="ico.ico" type="image/x-icon" />
+    <title>Wealthcode</title>
+    <link rel="stylesheet" href="cssfile.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div id="navbar">
+          <img class="logo2" src="logo2.png" />
+          <img class="logo3" src="logo3.png" />
+          <form id="login-form" onsubmit="return false;">
+            <label class="one" for="username">Member Name:</label>
+            <input
+              class="oneinput"
+              type="text"
+              id="username"
+              name="username"
+              size="14"
+            />
+            <label class="two" for="password">Password:</label>
+            <input
+              class="twoinput"
+              type="password"
+              id="password"
+              name="password"
+              size="14"
+            />
+            <button
+              type="button"
+              class="btn"
+              onclick="customAlert.alert('Member Name and/or Password are either missing or incorrect')"
+            >
+              Login
+            </button>
+            <button class="btn2">
+              <a
+                title="wealthcode.investments@gmail.com"
+                class="t"
+                href="mailto:wealthcode.investments@gmail.com"
+                >contact</a
+              >
+            </button>
+          </form>
+        </div>
+      </header>
+
+      <div class="slider">
+        <div class="myslide fade">
+          <img class="img1" src="image1.jpg" />
+        </div>
+        <div class="myslide fade">
+          <img class="img2" src="image2.jpg" />
+        </div>
+        <div class="myslide fade">
+          <img class="img3" src="image3.jpg" />
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="dotsbox" style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+    </div>
+    <script src="jsfile.js"></script>
+  </body>
+</html>
