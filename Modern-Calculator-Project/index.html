@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohammad AlShahrour Calc</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="icons8-calculator-96.png" type="image/x-icon" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="smallcontainer">Mohammad AlShahrour Calculator</div>
+    <div class="container">
+      <div class="calculator">
+        <form>
+          <div class="display">
+            <input type="text" name="display" />
+          </div>
+          <div>
+            <input
+              type="button"
+              value="AC"
+              onclick="clearDisplay()"
+              class="operator"
+            />
+            <input
+              type="button"
+              value="DE"
+              onclick="deleteLastCharacter()"
+              class="operator"
+            />
+            <input
+              type="button"
+              value="."
+              onclick="appendDot()"
+              class="operator"
+            />
+            <input
+              type="button"
+              value="/"
+              onclick="appendOperator('/')"
+              class="operator"
+            />
+          </div>
+          <div>
+            <input type="button" value="7" onclick="appendDigit('7')" />
+            <input type="button" value="8" onclick="appendDigit('8')" />
+            <input type="button" value="9" onclick="appendDigit('9')" />
+            <input
+              type="button"
+              value="*"
+              onclick="appendOperator('*')"
+              class="operator"
+            />
+          </div>
+          <div>
+            <input type="button" value="4" onclick="appendDigit('4')" />
+            <input type="button" value="5" onclick="appendDigit('5')" />
+            <input type="button" value="6" onclick="appendDigit('6')" />
+            <input
+              type="button"
+              value="-"
+              onclick="appendOperator('-')"
+              class="operator"
+            />
+          </div>
+          <div>
+            <input type="button" value="1" onclick="appendDigit('1')" />
+            <input type="button" value="2" onclick="appendDigit('2')" />
+            <input type="button" value="3" onclick="appendDigit('3')" />
+            <input
+              type="button"
+              value="+"
+              onclick="appendOperator('+')"
+              class="operator"
+            />
+          </div>
+          <div>
+            <input type="button" value="00" onclick="appendDigit('00')" />
+            <input type="button" value="0" onclick="appendDigit('0')" />
+            <input
+              type="button"
+              value="="
+              onclick="calculateResult()"
+              class="equal operator"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
